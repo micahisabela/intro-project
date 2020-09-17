@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+  </head>
+
+  <style>
+    body {
+      display: block;
+      margin: 8px;
+    }
+
+    h1 {
+      color: #1a64d6;
+      font-size: 34px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 48px;
+      margin: 0;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 34px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      line-height: 48px;
+      margin: 0;
+      text-align: center;
+    }
+
+    ul {
+      padding: 0;
+      text-align: center;
+    }
+
+    .day {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .day-temp {
+      font-family: monospace;
+      font-size: 18px;
+      opacity: 0.7;
+    }
+
+    li {
+      transition: all 200ms ease-in-out;
+      padding: 10px 0;
+      max-width: 400px;
+      margin: 0 auto;
+      list-style: none;
+      transition: all 200ms ease-in-out;
+    }
+
+    li:hover {
+      background-color: #fffbef;
+      border: 1px transparent #fffbef;
+      border-radius: 10px;
+    }
+
+    button {
+      border: 1px solid #1a64d6;
+      background-color: #1a64d6;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+      display: block;
+      margin: 20px auto;
+      padding: 16px 24px;
+      border-radius: 30px;
+      transition: all 200ms ease;
+      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+    }
+
+    button:hover {
+      color: #1a64d6;
+      background-color: #ffffff;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      font-family: monospace;
+      font-size: 18px;
+      opacity: 0.7;
+    }
+  </style>
+
+  <body>
+    <h1>
+      🌤 <br />
+      Currently 21° in Tokyo
+    </h1>
+
+    <h2>13° / <strong>23°</strong></h2>
+
+    <ul>
+      <li>
+        <h3 class="day">
+          🌧Tomorrow
+        </h3>
+        <p class="day-temp">10° / <strong>22°</strong></p>
+      </li>
+
+      <li>
+        <h3 class="day">
+          ⛅️Saturday
+        </h3>
+        <p class="day-temp">15° / <strong>17°</strong></p>
+      </li>
+
+      <li>
+        <h3 class="day">
+          ☀️Sunday
+        </h3>
+        <p class="day-temp">25° / <strong>28°</strong></p>
+      </li>
+    </ul>
+
+    <button>
+      Change city
+    </button>
+
+    <footer>
+      Coded by Micah Kelly
+    </footer>
+  </body>
+</html>

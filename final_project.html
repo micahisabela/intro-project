@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelly Green Landscaping</title>
+  </head>
+
+  <style>
+    body {
+      background: linear-gradient(#d9bf77, #f0e1b9);
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    .services,
+    p {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-weight: 100;
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 30px;
+      margin: 30px 30px 5px 30px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .services {
+      border: 2px solid black;
+      max-width: 600px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    ul {
+      list-style: none;
+      line-height: 25px;
+      font-size: 20px;
+      padding: 0;
+      margin: 10px 10px 25px 10px;
+    }
+
+    hr {
+      border: 1px dotted black;
+    }
+
+    .about {
+      width: 500px;
+      line-height: 22px;
+      display: block;
+      margin: 0 auto;
+      font-size: 18px;
+      padding-top: 10px;
+    }
+
+    .linked-in {
+      color: #436f8a;
+    }
+
+    .linked-in:hover {
+      color: #000000;
+    }
+
+    button {
+      padding: 15px 15px;
+      font-size: 18px;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px black;
+      margin: 0px 0px 20px 0px;
+      cursor: pointer;
+      background-color: #bac964;
+      color: black;
+      transition: all 200ms ease;
+    }
+
+    button:hover {
+      background-color: #438a5e;
+    }
+
+    .tools {
+      font-weight: bold;
+    }
+
+    footer {
+      font-style: italic;
+      text-align: right;
+    }
+
+    .micah {
+      color: hotpink;
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>
+        Kelly Green 🌲<br />
+        Landscaping Company <br />
+      </h1>
+
+      <h2>
+        <em>Founded by Morgan L. Kelly</em>
+      </h2>
+
+      <img
+        alt="front yard"
+        src="https://images.squarespace-cdn.com/content/v1/585dc42c725e25ca57806ffc/1514477973534-QVBT3JI31QA9WHA1CV3K/ke17ZwdGBToddI8pDm48kNpb7rtcMxIT2OSkEp7Z_bt7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UW4xxpgW1dV0O9oW_vMABbs-7nUofb0z9IVtl-9DISbWZiBzp4SJKR9WV6uRavEbCg/Marketing+4.jpg?format=750w"
+      />
+
+      <h3>
+        Services offered:
+      </h3>
+
+      <div class="services">
+        <ul>
+          <li>
+            General maintenance
+          </li>
+          <li>
+            Irrigation maintenance
+          </li>
+          <li>
+            Plant design & Installation
+          </li>
+          <li>
+            Tree service
+          </li>
+          <li>
+            One-time clean-up service
+          </li>
+          <li>
+            Seasonal fertilization
+          </li>
+          <li>
+            Lawn care
+          </li>
+        </ul>
+
+        <button><strong>Schedule a consultation</strong></button>
+      </div>
+
+      <h3>
+        Meet the Founder
+      </h3>
+
+      <img
+        src="https://media-exp1.licdn.com/dms/image/C5603AQFgPwD5KQU2zg/profile-displayphoto-shrink_800_800/0?e=1597881600&v=beta&t=mL8vhOTMwvuoFBJXp61YXm0OiG88_Mpeb8WlSpCuLOc"
+        width="300px"
+      />
+
+      <p class="about">
+        "I am dedicated to providing quality landscaping services by practicing
+        environmental consciousness and unbeatable customer service.
+        <span class="tools"
+          >All of my power tools are electronically powered - this prevents gas
+          emissions, and reduces noise and clutter.</span
+        >
+        You can be sure to count on me for your next landscaping needs." <br />
+        - <strong>Morgan L. Kelly</strong> <br />
+        <a
+          class="linked-in"
+          href="https://www.linkedin.com/in/morgan-kelly-a375b7159"
+          target="_blank"
+          >Connect with me on LinkedIn</a
+        >
+      </p>
+    </div>
+
+    <hr />
+
+    <footer>
+      This page was developed by
+      <a
+        class="micah"
+        href="https://www.linkedin.com/in/micah-isabela-kelly-ab362ab8/"
+      >
+        Micah Kelly
+      </a>
+    </footer>
+
+    <script>
+      function schedule() {
+        let name = prompt("What is your first name?");
+        let service = prompt("What type of service do you need?");
+
+        service = service.trim();
+        service = service.toLowerCase();
+        service = service.replace("and", "&");
+
+        if (
+          service === "general maintenance" ||
+          service === "irrigation maintenance" ||
+          service === "plant design & installation" ||
+          service === "tree service" ||
+          service === "one-time clean-up service" ||
+          service === "seasonal fertilization" ||
+          service === "lawn care"
+        ) {
+          let phoneNumber = prompt("Okay! What is your phone number?");
+          alert(
+            "Thanks, " +
+              name +
+              "!😁 We will contact you at " +
+              phoneNumber +
+              " to discuss further about your " +
+              service +
+              " needs!"
+          );
+        } else {
+          alert("Sorry, please input a valid service☹️");
+        }
+      }
+
+      let scheduleButton = document.querySelector("button");
+      scheduleButton.addEventListener("click", schedule);
+    </script>
+  </body>
+</html>

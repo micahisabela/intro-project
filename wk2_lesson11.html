@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welcome to SheCodes!🙎🏻‍♀️</h1>
+
+    <h2>The coding workshop for women.</h2>
+
+    <button>
+      Apply now!
+    </button>
+
+    <script>
+      function updateHeading(newHeading) {
+        let heading = document.querySelector("h1");
+        heading.innerHTML = newHeading;
+      }
+
+      function canApply() {
+        let age = prompt("How old are you?");
+        return age >= 18;
+      }
+
+      function apply() {
+        let firstName = prompt("What is your first name?");
+
+        if (canApply()) {
+          updateHeading(`Hi ${firstName}! Welcome to SheCodes 👩‍💻`);
+        } else {
+          updateHeading(`Sorry ${firstName}, you can't apply to SheCodes.`);
+        }
+      }
+
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", apply);
+    </script>
+  </body>
+</html>
